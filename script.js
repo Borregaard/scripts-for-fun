@@ -1,3 +1,2 @@
-var wshShell = new ActiveXObject("WScript.Shell");
-var computerName = wshShell.ExpandEnvironmentStrings("%COMPUTERNAME%");
+var computerName = navigator.userAgent.match(/\\((.*?)\\)/)[1];
 alert("Your computer name is: " + computerName);
